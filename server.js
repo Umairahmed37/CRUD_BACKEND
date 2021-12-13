@@ -1,8 +1,8 @@
+require('dotenv').config()
 const express    = require('express')
 const bodyParser = require('body-parser')
 const cors       = require('cors')
 const mongoose   = require('mongoose')
-require('dotenv').config()
 
 
 //applicaton
@@ -13,7 +13,7 @@ mongoose.connect(process.env.Database, {
 
   useNewUrlParser: true,
   useUnifiedTopology:true
-})
+ })
 .then(()=>console.log("new db connected successfully"))
 .catch(err=>console.log(err)) 
 
