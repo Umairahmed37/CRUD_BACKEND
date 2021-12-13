@@ -8,15 +8,9 @@
     "npm": "6.14.14"
   },
   "scripts": {
-    "Server": "nodemon Server.js",
-    "start": "node Server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "Client-install": "npm install --prefix Client",
-    "Client": "npm start --prefix Client",
-    "dev": "concurrently \"npm run Server\" \"npm run Client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Client && npm run build --prefix Client"
+    "server": "nodemon server.js",
+    "start": "node server.js"
+     
   },
   "keywords": [],
   "author": "",
